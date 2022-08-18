@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.welcome {
+    width: 80vw;
+    padding: 5px 30px;
+    background: #ffffff;
+    color: #990099;
+}
+
+.sidenav{
+    width: 20vw;
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+    list-style: none;
+
+
+}
+.sidenav .li {
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sidenav .li:hover {
+    background-color: #990099;
+    color: white;
+    border-radius: 15px;
+}
+
+.post {
+    width: 100vw;
+    height: 100vh;
+    background: palevioletred;
+    color: blue;
+    overflow: scroll;
+}
+
+.mobile{
+    display: none;
+    flex-direction: column;
+    background: #030003;
+    z-index: 1;
+    color: #EEEEEE;
+    align-items: center;
+    justify-content: space-evenly;
+
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    transition: all 1s;
+    left: 0;
+    width: 0;
+
+}
+
+.mobile-nav{
+    display: none;
+}
+
+.mobile h2 {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.mobile .li {
+    padding: 20px;
+    list-style: none;
+}
+
+.dashboard{
+    width: 80vw;
+    padding: 40px;
+  
+    height: 100vh;
+    background-color: #EEEEEE;
+}
+
+.jobs{
+
+    height: 100vh;
+    overflow: scroll;
+    background-color: #EEEEEE;
+}
+
+
+
+
+
+@media screen and (max-width:730px) {
+    .dboard {
+        width: 92% !important;
+    }
+
+    .sidenav{
+        display: none;
+    }
+
+    .sidenav .li {
+        font-size: 0.8rem;
+    }
+
+    .mobile-nav{
+        display: flex;
+    }
+
+    .welcome{
+        width: 100vw;
+        padding: 20px 30px;
+    }
+
+    .logout-btn{
+        display: none;
+    }
+
+    .mobile {
+        display: flex;
+     
+    }
+
+    .mobile .li {
+        font-size: 1.0rem;
+    }
+
+    .welcome h2{
+        margin-left: auto;
+    }
+
+    .dashboard{
+        width: 100vw;
+    }
+}
+
+@media screen and (min-width: 731px) and (max-width: 1000px) {
+    .sidenav{
+        padding: 10px 10px;
+        font-size: 0.7rem;
+    }
+}
+
